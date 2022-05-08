@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-counter',
   template: `
@@ -6,9 +7,9 @@ import { Component } from '@angular/core';
     <h3>
       The base is <strong>{{ base }}</strong>
     </h3>
-    <button (click)="acc(base)">+ {{ base }}</button>
-    <span> {{ counter }} </span>
     <button (click)="acc(-base)">- {{ base }}</button>
+    <span> {{ counter }} </span>
+    <button (click)="acc(base)">+ {{ base }}</button>
   `,
 })
 export class CounterComponent {
